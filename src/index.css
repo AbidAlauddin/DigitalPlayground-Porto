@@ -1,0 +1,228 @@
+@import "tailwindcss";
+
+:root {
+  --shell-inset: clamp(12px, min(2.5vw, 3.5vh), 40px);
+  --shell-radius: clamp(12px, 1.5vw, 22px);
+  --navbar-height: clamp(48px, 6vh, 52px);
+  --section-top-inset: clamp(16px, 3vh, 32px);
+  --section-bottom-inset: clamp(24px, 4vh, 44px);
+  --section-vertical-inset: var(--section-bottom-inset);
+  --mobile-scroll-safe-space: calc(var(--section-bottom-inset) + 56px + env(safe-area-inset-bottom, 0px));
+  --content-max-width: 1360px;
+  --content-padding-x: clamp(20px, 4vw, 64px);
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --navbar-height: 46px;
+    --section-top-inset: clamp(24px, 3.9vh, 38px);
+    --mobile-scroll-safe-space: 0px;
+  }
+}
+
+@theme {
+  --color-primary: #0f766e;
+  --color-primary-dark: #115e59;
+  --color-primary-light: #ccfbf1;
+  --color-accent: #f59e0b;
+  --color-bg: #fafaf9;
+  --color-surface: #ffffff;
+  --color-text-primary: #1c1917;
+  --color-text-secondary: #78716c;
+  --color-border: #e7e5e4;
+  --color-muted: #f5f5f4;
+
+  --font-sans: 'Plus Jakarta Sans', Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    background-color: #ece6da;
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.portfolio-outer {
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+  overflow: hidden;
+  background-color: #ece6da;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.portfolio-shell {
+  position: relative;
+  box-sizing: border-box;
+  width: calc(100vw - (2 * var(--shell-inset)));
+  height: calc(100svh - (2 * var(--shell-inset)));
+  border-radius: var(--shell-radius);
+  background-color: #fcfbf9;
+  overflow: hidden;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(231, 229, 228, 0.6);
+}
+
+/* Centralized Navbar Header Geometry */
+.navbar-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--navbar-height);
+  display: flex;
+  align-items: flex-end;
+  z-index: 50;
+  width: 100%;
+  user-select: none;
+  pointer-events: none;
+  box-sizing: border-box;
+  padding-left: var(--content-padding-x);
+  padding-right: var(--content-padding-x);
+}
+
+/* Centralized Responsive Page Container */
+.page-container {
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Subtle Top Fade Overlay + Feathered Backdrop Blur */
+.navbar-fade-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: calc(var(--navbar-height) + 16px);
+  pointer-events: none;
+  z-index: 20;
+  background: linear-gradient(
+    to bottom,
+    rgba(252, 251, 249, 0.95) 0%,
+    rgba(252, 251, 249, 0.7) 45%,
+    rgba(252, 251, 249, 0) 100%
+  );
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    black 40%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    black 40%,
+    transparent 100%
+  );
+}
+
+/* Centralized Section Container Spacing System */
+.portfolio-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-top: calc(var(--navbar-height) + var(--section-top-inset));
+  padding-bottom: var(--section-bottom-inset);
+  padding-left: var(--content-padding-x);
+  padding-right: var(--content-padding-x);
+  user-select: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (min-width: 1024px) {
+  .portfolio-section {
+    overflow: hidden;
+  }
+}
+
+/* Reserved safe bottom padding for main section content on mobile */
+.section-content {
+  padding-bottom: var(--mobile-scroll-safe-space);
+}
+
+@media (min-width: 768px) {
+  .section-content {
+    padding-bottom: 0;
+  }
+}
+
+/* Pull main content closer to top category label while keeping footer anchored at bottom */
+.portfolio-section > :nth-child(3) {
+  margin-top: auto;
+}
+
+/* Directional gentle bounce for persistent scroll indicator circular arrow icon */
+@keyframes scroll-bounce-down {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+}
+
+@keyframes scroll-bounce-up {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.scroll-bounce-down {
+  animation: scroll-bounce-down 1.5s ease-in-out infinite;
+}
+
+.scroll-bounce-up {
+  animation: scroll-bounce-up 1.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-bounce-down,
+  .scroll-bounce-up {
+    animation: none;
+  }
+}
+
+/* Subtle floating & breathing idle motion for the monster mascot */
+@keyframes monster-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.monster-float-idle {
+  animation: monster-float 3.2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .monster-float-idle {
+    animation: none;
+  }
+}
