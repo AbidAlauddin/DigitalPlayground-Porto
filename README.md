@@ -2,111 +2,123 @@
 
 > **A little world where code meets imagination.**
 
-The Digital Playground is an interactive developer portfolio designed as a miniature animated world. Instead of presenting projects and personal information through a conventional portfolio layout, this experience invites visitors to explore a playful environment filled with animated characters, cozy miniature spaces, and interactive storytelling.
+<p align="center">
+  <img src="public/images/home-preview.png" alt="The Digital Playground - Homepage Preview" width="100%">
+</p>
 
-Every section represents a different part of the developer's journey, brought to life through unique monster characters and carefully designed environments.
-
-## ✨ Concept
-
-The Digital Playground is built around the idea that a developer portfolio should be more than a collection of projects and technical skills.
-
-It should be an experience.
-
-Inspired by miniature dioramas, animated storybooks, and playful digital environments, this portfolio combines:
-
-- **Interactive Storytelling** — Each section has its own narrative and personality.
-- **Animated Characters** — Unique monster characters accompany visitors throughout the experience.
-- **Miniature Environments** — Different sections feature their own room-inspired visual environments.
-- **Cinematic Atmosphere** — Warm lighting, soft shadows, subtle textures, and carefully composed backgrounds.
-- **Playful Interactions** — Animations and interactions make exploration feel more engaging.
-
-## 🗺️ Explore the World
-
-The portfolio is organized into six main sections.
-
-| Section | Experience |
-|---|---|
-| Home | A welcoming introduction to the digital playground. |
-| About | Get to know the developer and the person behind the projects. |
-| Skills | Explore technical skills and areas of expertise. |
-| Experience | Discover professional experience and career journey. |
-| Projects | Browse selected projects, implementations, and source code. |
-| Contact | Meet all the monsters together and get in touch. |
-
-## 👾 The Characters
-
-Monsters are the recurring characters that give each section its own personality.
-
-Each character has a dedicated role, visual identity, and animation behavior.
-
-The characters are designed to make the portfolio feel like a living miniature world rather than a static webpage.
-
-## 🎨 Visual Direction
-
-**Cinematic Miniature Rooms on Warm Paper**
-
-The visual identity combines a warm, paper-inspired background with individual miniature environments around each character.
-
-Key visual principles:
-
-- Warm off-white backgrounds.
-- Subtle paper textures.
-- Natural ambient lighting.
-- Soft environmental shadows.
-- Miniature room-inspired decorations.
-- Consistent visual language across sections.
-- Characters remain the primary visual focus.
-
-The goal is to create a cohesive world that feels warm, playful, and carefully crafted without overwhelming the content.
-
-## 🚀 Featured Projects
-
-The Projects section showcases selected software development work, including web applications, internal systems, and desktop applications.
-
-Each project may include:
-
-- Project overview.
-- Technology stack.
-- Live demo, when available.
-- Source code repository.
-- Project preview.
-
-Explore the Projects section to discover the implementations and development work behind each project.
-
-## 🛠️ Technology
-
-This portfolio is developed using the technologies and tools documented in the project source code.
-
-The implementation focuses on:
-
-- Responsive web development.
-- Reusable UI components.
-- Interactive animations.
-- Performance-conscious rendering.
-- Maintainable project architecture.
-
-For the exact technology stack, refer to the project's dependency manifests and source code.
-
-## 📱 Experience
-
-The Digital Playground is designed to be explored across different screen sizes.
-
-The experience prioritizes:
-
-- Responsive layouts.
-- Smooth interactions.
-- Clear navigation.
-- Accessible content.
-- Performance-conscious animations.
-
-## 💌 Contact
-
-Interested in collaborating, discussing a project, or simply saying hello?
-
-Explore the Contact section and leave a message.
+<p align="center">
+  <em>An interactive developer portfolio inspired by miniature worlds, animated characters, and playful storytelling.</em>
+</p>
 
 ---
 
-**The Digital Playground**
+## ✨ About The Project
 
-*Not just a portfolio. A little world waiting to be explored.*
+**The Digital Playground** is an interactive developer portfolio that transforms the traditional portfolio experience into a small animated world.
+
+Rather than simply displaying personal information, technical skills, and project collections, this portfolio invites visitors to explore a playful environment inhabited by unique monster characters.
+
+Every section tells a different part of the developer's story, combining interactive elements, character animations, miniature-inspired environments, and cinematic visual details.
+
+The goal is simple: make exploring a developer portfolio feel like discovering a little world.
+
+## 🌍 Explore The World
+
+The experience is divided into six main sections:
+
+| Section | Description |
+|---|---|
+| 🏠 Home | A welcoming introduction to the developer and the world of The Digital Playground. |
+| 👋 About | Discover the person behind the code, including background and personal interests. |
+| 🧩 Skills | Explore technical skills, tools, and areas of expertise. |
+| 📁 Experience | Follow the professional journey and development experience. |
+| 🚀 Projects | Explore selected software projects, live demonstrations, and source code. |
+| 💌 Contact | A final gathering where all monster characters come together. |
+
+## 👾 Interactive Characters
+
+Monsters are the recurring characters throughout the portfolio.
+
+Each character represents a different section and has its own personality, visual identity, and animation behavior.
+
+They are not just decorative elements. Their movements and interactions help bring the environment to life and make the browsing experience more engaging.
+
+## 🎨 Design Philosophy
+
+### Cinematic Miniature Rooms on Warm Paper
+
+The visual direction combines a warm paper-inspired background with individual miniature environments surrounding each character.
+
+The design focuses on:
+
+- **Warm Atmosphere** — Off-white surfaces and subtle natural color variations.
+- **Miniature Environments** — Room-inspired details that give every section its own identity.
+- **Natural Lighting** — Soft ambient lighting and environmental shadows.
+- **Character Focus** — Monsters remain the main visual attraction.
+- **Interactive Storytelling** — Animations and transitions that support the narrative.
+- **Visual Consistency** — Different environments connected through one cohesive visual language.
+
+The intention is to create a playful yet polished experience without overwhelming visitors with unnecessary visual elements.
+
+## 🚀 Featured Projects
+
+The Projects section showcases selected software development work across different areas, including:
+
+- Web applications.
+- Internal management systems.
+- Desktop applications.
+- Productivity tools.
+- Educational platforms.
+
+Each project can provide relevant information such as its overview, technology stack, preview image, live demo, and source code repository.
+
+## 🛠️ Technology
+
+The project uses the technologies and tools defined in its source code and dependency configuration.
+
+The development approach emphasizes:
+
+- Reusable components.
+- Responsive layouts.
+- Interactive animations.
+- Maintainable architecture.
+- Performance-conscious rendering.
+- Clean and consistent UI implementation.
+
+For the complete technology stack, please refer to the project's source code and dependency manifests.
+
+## 📱 Responsive Experience
+
+The Digital Playground is designed to be explored across desktop, tablet, and mobile devices.
+
+The responsive experience aims to preserve:
+
+- Clear content hierarchy.
+- Comfortable navigation.
+- Character visibility.
+- Consistent visual identity.
+- Smooth and accessible interactions.
+
+## 🎯 Project Goals
+
+This project explores how a developer portfolio can become a more memorable digital experience through:
+
+1. Creative visual storytelling.
+2. Character-driven interactions.
+3. Immersive miniature environments.
+4. Thoughtful animation and motion design.
+5. A balance between creativity and usability.
+
+## 💌 Get in Touch
+
+Have an idea, collaboration opportunity, or project to discuss?
+
+Feel free to explore the Contact section and send a message.
+
+---
+
+<p align="center">
+  <strong>The Digital Playground</strong>
+  <br>
+  <em>Not just a portfolio. A little world waiting to be explored.</em>
+</p>
